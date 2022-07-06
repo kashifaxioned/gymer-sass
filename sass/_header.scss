@@ -1,0 +1,55 @@
+.header {
+  @include pos-absolute (26px, 7.61%, auto, 5.87%);
+
+  & .wrapper {
+    width: 100%;
+    @include flexBox (auto, auto, center, false);
+  }
+
+  &__nav {
+    margin: 0 31% 0 29.7%;
+    flex-basis: 29.09%;
+    &__list {
+
+      @include flexBox (auto, space-between, center, false);
+
+
+      &__item {
+
+        &__name {
+          color: $tertiary-color;
+          cursor: pointer;
+          text-transform: capitalize;
+
+          @include font (1.1rem, 500);
+
+          @include breakpoint (min-ipad) { &:hover { color: $secondary-color; } }
+        }
+
+        &.active {
+          border-bottom: 2px solid $tertiary-color;
+          padding-bottom: 3px;
+        }
+      }
+    }
+
+    &__close, &__open { display: none; }
+  }
+
+  &__contact__cta {
+    padding: 9px 20px;
+    border-radius: 5px;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    text-transform: uppercase;
+
+    @include font (14px, 500);
+
+    @include breakpoint (min-ipad) {
+      &:hover {
+        background-color: $secondary-color;
+        color: $tertiary-color; 
+      }
+    }
+  }
+}

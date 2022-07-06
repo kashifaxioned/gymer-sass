@@ -2,13 +2,12 @@
 
 body {
   box-sizing: border-box;
-  color: #fff;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a { 
   display: inline-block;
-  color: inherit;
+  color: $secondary-color;
   text-decoration: none; 
 }
 
@@ -21,7 +20,7 @@ li {
 
 .wrapper {
   margin: 0 auto;
-  width: 90%; 
+  width: 58%; 
 }
 
 %section-title { 
