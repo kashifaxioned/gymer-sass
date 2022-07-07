@@ -108,6 +108,20 @@ li {
 .get-in-touch__img img {
   box-shadow: 10px 10px #53d494; }
 
+.get-in-touch__text__title, .classes__title {
+  color: #53d494;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-size: 2.93rem;
+  font-weight: 700; }
+
+.classes__info {
+  width: 47.33%;
+  padding: 1.37rem 0 4.06rem;
+  line-height: 1.8;
+  font-size: 17px;
+  font-weight: 400; }
+
 .header {
   position: absolute;
   top: 26px;
@@ -236,12 +250,6 @@ li {
   .get-in-touch__text {
     padding-top: 2.93rem;
     flex-basis: 40%; }
-    .get-in-touch__text__title {
-      color: #53d494;
-      line-height: 1.2;
-      text-transform: capitalize;
-      font-size: 2.93rem;
-      font-weight: 700; }
     .get-in-touch__text__info {
       padding: 1.62rem 0 2.43rem;
       line-height: 1.8;
@@ -261,3 +269,28 @@ li {
         color: #53d494; }
   .get-in-touch__img {
     flex-basis: 48.41%; }
+
+.classes {
+  padding: 5.06rem 0 2.5rem; }
+  .classes__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; }
+  .classes__radio {
+    margin-top: 2.81rem;
+    gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; }
+    .classes__radio__cta {
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 0; }
+      .classes__radio__cta.active {
+        background-color: #53d494; }

@@ -28,21 +28,19 @@ li {
 %img-shadow { box-shadow: 10px 10px $secondary-color; }
 
 %section-title { 
-  @include font (3.12rem, 900); 
+  color: $secondary-color;
+  line-height: 1.2;
+  text-transform: capitalize;
 
-  @include breakpoint (ipad) { @include font (2.5rem, 900); }
+  @include font (2.93rem, 700);
+
+  // @include breakpoint (ipad) { @include font (2.5rem, 900); }
 
 }
 
 %section-info {
-  padding: 2.5rem 0 5.62rem;
-  // color: $tertiary-color;
-  @include font (1.56rem, 400);
-
-  @include breakpoint (ipad) { 
-    padding: 1.5rem 0 3rem;
-    @include font (1.3rem, 900); 
-  
-  }
-
+  width: 47.33%;
+  padding: 1.37rem 0 4.06rem;
+  line-height: 1.8;
+  @include font (17px, 400);
 }

@@ -9,13 +9,7 @@
     padding-top: 2.93rem;
     flex-basis: 40%;
 
-    &__title {
-      color: $secondary-color;
-      line-height: 1.2;
-      text-transform: capitalize;
-
-      @include font (2.93rem, 700);
-    }
+    &__title { @extend %section-title; }
 
     &__info {
       padding: 1.62rem 0 2.43rem;
