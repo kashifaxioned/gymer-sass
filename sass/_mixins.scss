@@ -82,3 +82,18 @@
 @mixin count-icon ($content) {
   @include icon ($content, 2.81rem, 500, $secondary-color)
 }
+
+@mixin  cta ($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  background-color: $secondary-color;
+  color: #000;
+  text-transform: uppercase;
+  @include font (12px, 700);
+
+  &:hover {
+    background-color: transparent;
+    color: $secondary-color;
+  }
+}

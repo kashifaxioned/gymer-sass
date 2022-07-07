@@ -25,6 +25,8 @@ li {
   width: 58%; 
 }
 
+%img-shadow { box-shadow: 10px 10px $secondary-color; }
+
 %section-title { 
   @include font (3.12rem, 900); 
 

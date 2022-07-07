@@ -1,0 +1,35 @@
+.get-in-touch {
+  padding-bottom: 6.25rem;
+
+  & .wrapper {
+    @include flexBox (auto, space-between, auto, false);
+  }
+
+  &__text {
+    padding-top: 2.93rem;
+    flex-basis: 40%;
+
+    &__title {
+      color: $secondary-color;
+      line-height: 1.2;
+      text-transform: capitalize;
+
+      @include font (2.93rem, 700);
+    }
+
+    &__info {
+      padding: 1.62rem 0 2.43rem;
+      line-height: 1.8;
+
+      @include font (17px, 500);
+    }
+
+    &__cta { @include cta (16px, 26px, 16px, 26px); }
+  }
+
+  &__img {
+    flex-basis: 48.41%;
+
+    & img { @extend %img-shadow }
+  }
+}
