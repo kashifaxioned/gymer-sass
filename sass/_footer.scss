@@ -1,0 +1,66 @@
+.footer {
+  padding: 7.37rem 0 8.68rem;
+
+  &__list {
+    @include flexBox (auto, space-between, auto, true);
+
+    &__item {
+
+      flex-basis: 33.3%;
+      
+      &--links { flex-basis: 14.48%; }
+
+      &__title {
+        padding-bottom: 1.31rem;
+        color: $tertiary-color;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @include font (initial, 600)
+      }
+
+      &__info {
+        color: $primary-color;
+        line-height: 1.7;
+        @include font (14px, 400)
+      }
+
+      &__links-list {
+        @include flexBox (column, auto, auto, false);
+
+        & a { 
+          margin-bottom: 12px;
+          text-transform: capitalize;
+        }
+      }
+
+      &__form {
+        margin-top: 14px;
+        @include flexBox (auto, auto, auto, false);
+
+        &__group {  
+
+         & input {
+            margin: 0;
+            border-radius: 0;
+            @extend %form-elements
+          } 
+
+          &__error { display: none; }
+
+        }
+
+        &__control__submit {
+          @include cta (15px, 12px, 15px, 12px);
+          @include font (12px, 900);  
+          border-radius: 0;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 12.37rem;
+    text-align: center;
+  }
+}

@@ -130,7 +130,7 @@ li {
   font-size: 1rem;
   text-transform: capitalize; }
 
-.contact__form__group__first-name, .contact__form__group__last-name, .contact__form__group__subject, .contact__form__group__email, .contact__form__group textarea {
+.contact__form__group__first-name, .contact__form__group__last-name, .contact__form__group__subject, .contact__form__group__email, .contact__form__group textarea, .footer__list__item__form__group input {
   width: 100%;
   border: 2px solid #fff;
   padding: 8px 11px;
@@ -482,3 +482,69 @@ li {
       .contact__form__control__submit:hover {
         background-color: transparent;
         color: #53d494; } }
+
+.footer {
+  padding: 7.37rem 0 8.68rem; }
+  .footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; }
+    .footer__list__item {
+      flex-basis: 33.3%; }
+      .footer__list__item--links {
+        flex-basis: 14.48%; }
+      .footer__list__item__title {
+        padding-bottom: 1.31rem;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: initial;
+        font-weight: 600; }
+      .footer__list__item__info {
+        color: #3f5c5f;
+        line-height: 1.7;
+        font-size: 14px;
+        font-weight: 400; }
+      .footer__list__item__links-list {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch; }
+        .footer__list__item__links-list a {
+          margin-bottom: 12px;
+          text-transform: capitalize; }
+      .footer__list__item__form {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch; }
+        .footer__list__item__form__group input {
+          margin: 0;
+          border-radius: 0; }
+        .footer__list__item__form__group__error {
+          display: none; }
+        .footer__list__item__form__control__submit {
+          padding: 15px 12px 15px 12px;
+          border: 1px solid #53d494;
+          border-radius: 5px;
+          background-color: #53d494;
+          color: #000;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 700;
+          font-size: 12px;
+          font-weight: 900;
+          border-radius: 0;
+          line-height: 1; }
+          @media screen and (min-width: 768px) {
+            .footer__list__item__form__control__submit:hover {
+              background-color: transparent;
+              color: #53d494; } }
+  .footer__copyright {
+    margin-top: 12.37rem;
+    text-align: center; }
