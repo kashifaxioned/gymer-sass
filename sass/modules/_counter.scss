@@ -1,0 +1,37 @@
+.counter {
+  padding: 5.12rem 0 7.81rem;
+
+  &__list {
+    @include flexBox (auto, space-between, center, false);
+
+    &__item {
+
+      gap: 24px;
+      @include flexBox (auto, space-between, center, false);
+
+      &__div {
+        
+        &__count {
+          padding-bottom: 7px;
+          display: block;
+          color: $tertiary-color;
+          @include font (2.5rem, 500);
+        }
+  
+        &__name {
+          display: block;
+          text-transform: capitalize;
+          @include font (15px, 500);
+        }
+      }
+
+      &.members::before { @include count-icon ("\f70c"); }
+
+      &.daily-visitors::before { @include count-icon ("\f84a"); }
+
+      &.health-program::before { @include count-icon ("\e3b2"); }
+
+      &.heart-beat::before { @include count-icon ("\f21e") }
+    }
+  }
+}

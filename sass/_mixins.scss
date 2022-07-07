@@ -79,3 +79,6 @@
   }
 }
 
+@mixin count-icon ($content) {
+  @include icon ($content, 2.81rem, 500, $secondary-color)
+}

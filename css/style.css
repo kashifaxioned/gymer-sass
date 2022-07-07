@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -84,6 +85,8 @@ sub {
 
 body {
   box-sizing: border-box;
+  background-color: #000;
+  color: #3f5c5f;
   font-family: "Poppins", sans-serif; }
 
 a {
@@ -167,3 +170,54 @@ li {
     text-transform: capitalize;
     font-size: 7.81rem;
     font-weight: 900; }
+
+.counter {
+  padding: 5.12rem 0 7.81rem; }
+  .counter__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .counter__list__item {
+      gap: 24px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .counter__list__item__div__count {
+        padding-bottom: 7px;
+        display: block;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 500; }
+      .counter__list__item__div__name {
+        display: block;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 500; }
+      .counter__list__item.members::before {
+        content: "";
+        color: #53d494;
+        font-family: "FontAwesome";
+        font-size: 2.81rem;
+        font-weight: 500; }
+      .counter__list__item.daily-visitors::before {
+        content: "";
+        color: #53d494;
+        font-family: "FontAwesome";
+        font-size: 2.81rem;
+        font-weight: 500; }
+      .counter__list__item.health-program::before {
+        content: "";
+        color: #53d494;
+        font-family: "FontAwesome";
+        font-size: 2.81rem;
+        font-weight: 500; }
+      .counter__list__item.heart-beat::before {
+        content: "";
+        color: #53d494;
+        font-family: "FontAwesome";
+        font-size: 2.81rem;
+        font-weight: 500; }
