@@ -105,17 +105,17 @@ li {
   margin: 0 auto;
   width: 58%; }
 
-.get-in-touch__img img {
+.get-in-touch__img img, .trainers__list__item__img img {
   box-shadow: 10px 10px #53d494; }
 
-.get-in-touch__text__title, .classes__title, .schedule__title {
+.get-in-touch__text__title, .classes__title, .schedule__title, .trainers__title {
   color: #53d494;
   line-height: 1.2;
   text-transform: capitalize;
   font-size: 2.93rem;
   font-weight: 700; }
 
-.classes__info, .schedule__info {
+.classes__info, .schedule__info, .trainers__info {
   width: 47.33%;
   padding: 1.37rem 0 4.06rem;
   line-height: 1.8;
@@ -352,3 +352,31 @@ li {
       .schedule__time-table__item__join-cta {
         flex-basis: 18.5%;
         text-align: center; }
+
+.trainers {
+  padding: 43px 0 100px; }
+  .trainers__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; }
+    .trainers__list__item {
+      flex-basis: calc(33.33% - 45px); }
+      .trainers__list__item__name {
+        padding: 52px 0 15px;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 26px;
+        font-weight: 400; }
+      .trainers__list__item__speciality {
+        padding-bottom: 35px;
+        line-height: 1;
+        opacity: .8;
+        text-transform: capitalize; }
+      .trainers__list__item__info {
+        line-height: 1.8;
+        font-size: 1rem;
+        font-weight: 400; }
+      .trainers__list__item:nth-of-type(2n) {
+        margin-top: 50px; }

@@ -1,0 +1,39 @@
+.trainers {
+  padding: 43px 0 100px;
+
+  &__title { @extend %section-title; }
+
+  &__info { @extend %section-info; }
+
+  &__list {
+    @include  flexBox (auto, space-between, auto, false);
+
+    &__item {
+      flex-basis: calc(33.33% - 45px);
+    
+      &__img img { @extend %img-shadow; }
+
+      &__name {
+        padding: 52px 0 15px;
+        color: $tertiary-color;
+        text-transform: capitalize;
+
+        @include font (26px, 400);
+      }
+
+      &__speciality {
+        padding-bottom: 35px;
+        line-height: 1;
+        opacity: .8;
+        text-transform: capitalize;
+      }
+
+      &__info {
+        line-height: 1.8;
+        @include font (1rem, 400)
+      }
+      &:nth-of-type(2n) { margin-top: 50px; }
+    }
+  
+  }
+}
