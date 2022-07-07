@@ -108,19 +108,26 @@ li {
 .get-in-touch__img img {
   box-shadow: 10px 10px #53d494; }
 
-.get-in-touch__text__title, .classes__title {
+.get-in-touch__text__title, .classes__title, .schedule__title {
   color: #53d494;
   line-height: 1.2;
   text-transform: capitalize;
   font-size: 2.93rem;
   font-weight: 700; }
 
-.classes__info {
+.classes__info, .schedule__info {
   width: 47.33%;
   padding: 1.37rem 0 4.06rem;
   line-height: 1.8;
   font-size: 17px;
   font-weight: 400; }
+
+.schedule__time-table__item__exercise, .schedule__time-table__item__timing, .schedule__time-table__item__trainer, .schedule__time-table__item__join-cta {
+  padding: 20px 0 20px 10px;
+  border-right: 1px solid #c6cace;
+  border-bottom: 1px solid #c6cace;
+  font-size: 1rem;
+  text-transform: capitalize; }
 
 .header {
   position: absolute;
@@ -264,9 +271,10 @@ li {
       text-transform: uppercase;
       font-size: 12px;
       font-weight: 700; }
-      .get-in-touch__text__cta:hover {
-        background-color: transparent;
-        color: #53d494; }
+      @media screen and (min-width: 768px) {
+        .get-in-touch__text__cta:hover {
+          background-color: transparent;
+          color: #53d494; } }
   .get-in-touch__img {
     flex-basis: 48.41%; }
 
@@ -294,3 +302,53 @@ li {
       font-size: 0; }
       .classes__radio__cta.active {
         background-color: #53d494; }
+
+.schedule {
+  padding: 146px 0; }
+  .schedule__day-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3px; }
+    .schedule__day-list__item__name {
+      padding: 13px 18px;
+      border-radius: 5px;
+      display: block;
+      color: #53d494;
+      cursor: pointer;
+      text-transform: capitalize;
+      font-size: 17px;
+      font-weight: 400; }
+      .schedule__day-list__item__name--selected {
+        background-color: #53d494;
+        color: #fff; }
+      @media screen and (min-width: 768px) {
+        .schedule__day-list__item__name:hover {
+          background-color: #53d494;
+          color: #fff; } }
+  .schedule__time-table {
+    margin-top: 2.87rem;
+    border: 1px solid #c6cace;
+    color: #c6cace;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch; }
+    .schedule__time-table__item {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch; }
+      .schedule__time-table__item__exercise {
+        flex-basis: 24.2%; }
+      .schedule__time-table__item__timing {
+        flex-basis: 32.7%; }
+      .schedule__time-table__item__trainer {
+        flex-basis: 24.6%; }
+      .schedule__time-table__item__join-cta {
+        flex-basis: 18.5%;
+        text-align: center; }

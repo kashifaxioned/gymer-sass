@@ -1,0 +1,68 @@
+.schedule {
+  padding: 146px 0;
+
+  &__title { @extend %section-title; }
+
+  &__info { @extend %section-info; }
+
+  &__day-list {
+    @include flexBox (auto, center, auto, false);
+    gap: 3px;
+
+    &__item__name {
+      padding: 13px 18px;
+      border-radius: 5px;
+      display: block;
+      color: $secondary-color;
+      cursor: pointer;
+      text-transform: capitalize;
+
+      @include font (17px, 400);
+
+      &--selected {
+        background-color: $secondary-color;
+        color: $tertiary-color; 
+      }
+
+      @include breakpoint (min-ipad) {
+        &:hover {
+          background-color: $secondary-color;
+          color: $tertiary-color; 
+        }
+      }
+    }
+  }
+
+  &__time-table {
+    margin-top: 2.87rem;
+    border: 1px solid $grey;
+    color: $grey;
+  
+    @include flexBox (column, auto, auto, false);
+
+    &__item {
+      @include flexBox (auto, auto, auto, false);
+
+      &__exercise {
+        flex-basis: 24.2%; 
+        @extend %time-table-item;
+      }
+
+      &__timing {
+        flex-basis: 32.7%; 
+        @extend %time-table-item;
+      }
+
+      &__trainer { 
+        flex-basis: 24.6%; 
+        @extend %time-table-item;
+      }
+
+      &__join-cta {
+        flex-basis: 18.5%;
+        text-align: center;
+        @extend %time-table-item;
+      }
+    }
+  }
+}

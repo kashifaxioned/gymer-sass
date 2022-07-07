@@ -44,3 +44,11 @@ li {
   line-height: 1.8;
   @include font (17px, 400);
 }
+
+%time-table-item {
+  padding: 20px 0 20px 10px;
+  border-right: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  font-size: 1rem; 
+  text-transform: capitalize;
+}
