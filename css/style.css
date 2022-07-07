@@ -108,7 +108,7 @@ li {
 .get-in-touch__img img, .trainers__list__item__img img {
   box-shadow: 10px 10px #53d494; }
 
-.get-in-touch__text__title, .classes__title, .schedule__title, .trainers__title, .service__title {
+.get-in-touch__text__title, .classes__title, .schedule__title, .trainers__title, .service__title, .contact__title {
   width: 47%;
   color: #53d494;
   line-height: 1.2;
@@ -116,7 +116,7 @@ li {
   font-size: 2.93rem;
   font-weight: 700; }
 
-.classes__info, .schedule__info, .trainers__info, .service__info {
+.classes__info, .schedule__info, .trainers__info, .service__info, .contact__info {
   width: 47.33%;
   padding: 1.37rem 0 4.06rem;
   line-height: 1.8;
@@ -129,6 +129,16 @@ li {
   border-bottom: 1px solid #c6cace;
   font-size: 1rem;
   text-transform: capitalize; }
+
+.contact__form__group__first-name, .contact__form__group__last-name, .contact__form__group__subject, .contact__form__group__email, .contact__form__group textarea {
+  width: 100%;
+  border: 2px solid #fff;
+  padding: 8px 11px;
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400; }
 
 .header {
   position: absolute;
@@ -264,7 +274,7 @@ li {
       font-size: 17px;
       font-weight: 500; }
     .get-in-touch__text__cta {
-      padding: 16px 26px 16px 26px;
+      padding: 1rem 1.6rem 1rem 1.6rem;
       border: 1px solid #53d494;
       border-radius: 5px;
       background-color: #53d494;
@@ -305,7 +315,7 @@ li {
         background-color: #53d494; }
 
 .schedule {
-  padding: 146px 0; }
+  padding: 9.12rem 0; }
   .schedule__day-list {
     display: flex;
     flex-wrap: nowrap;
@@ -355,7 +365,7 @@ li {
         text-align: center; }
 
 .trainers {
-  padding: 43px 0 100px; }
+  padding: 2.68rem 0 6.25rem; }
   .trainers__list {
     display: flex;
     flex-wrap: nowrap;
@@ -363,15 +373,15 @@ li {
     justify-content: space-between;
     align-items: stretch; }
     .trainers__list__item {
-      flex-basis: calc(33.33% - 45px); }
+      flex-basis: calc(33.33% - 2.81rem); }
       .trainers__list__item__name {
-        padding: 52px 0 15px;
+        padding: 3.25rem 0 15px;
         color: #fff;
         text-transform: capitalize;
-        font-size: 26px;
+        font-size: 1.62rem;
         font-weight: 400; }
       .trainers__list__item__speciality {
-        padding-bottom: 35px;
+        padding-bottom: 2.18rem;
         line-height: 1;
         opacity: .8;
         text-transform: capitalize; }
@@ -380,10 +390,10 @@ li {
         font-size: 1rem;
         font-weight: 400; }
       .trainers__list__item:nth-of-type(2n) {
-        margin-top: 50px; }
+        margin-top: 3.12rem; }
 
 .service {
-  padding: 88px 0; }
+  padding: 5.5rem 0; }
   .service__card-list {
     display: flex;
     flex-wrap: nowrap;
@@ -391,7 +401,7 @@ li {
     justify-content: space-between;
     align-items: stretch; }
     .service__card-list__item {
-      padding: 70px 65px;
+      padding: 4.37rem 4.06rem;
       flex-basis: calc(33.33% - 14px);
       background-color: #53d494;
       color: #fff; }
@@ -439,3 +449,36 @@ li {
       font-size: 0; }
       .service__radio__cta.active {
         background-color: #53d494; }
+
+.contact {
+  padding: 5.5rem 0 6.43rem;
+  background-color: #121212; }
+  .contact .wrapper {
+    width: 32.8%; }
+  .contact__info {
+    width: 100%; }
+  .contact__form__name {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; }
+  .contact__form__group {
+    margin-bottom: 15px; }
+    .contact__form__group--name {
+      flex-basis: calc(50% - 14px); }
+    .contact__form__group__error {
+      display: none; }
+  .contact__form__control__submit {
+    padding: 1.31rem 6.37rem 1.31rem 6.37rem;
+    border: 1px solid #53d494;
+    border-radius: 5px;
+    background-color: #53d494;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700; }
+    @media screen and (min-width: 768px) {
+      .contact__form__control__submit:hover {
+        background-color: transparent;
+        color: #53d494; } }

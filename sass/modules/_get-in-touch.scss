@@ -18,7 +18,7 @@
       @include font (17px, 500);
     }
 
-    &__cta { @include cta (16px, 26px, 16px, 26px); }
+    &__cta { @include cta (1rem, 1.6rem, 1rem, 1.6rem); }
   }
 
   &__img {

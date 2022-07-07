@@ -54,4 +54,15 @@ li {
   text-transform: capitalize;
 }
 
+%form-elements {
+  width: 100%;
+  border: 2px solid $tertiary-color;
+  padding: 8px 11px;
+  background: none;
+  color: $tertiary-color;
+  font-family: inherit;
+
+  @include font (15px, 400)
+}
+
 

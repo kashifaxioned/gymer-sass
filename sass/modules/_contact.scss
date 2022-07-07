@@ -1,0 +1,30 @@
+.contact {
+  padding: 5.5rem 0 6.43rem;
+  background-color: $powder-black;
+
+  & .wrapper { width: 32.8%; }
+
+  &__title { @extend %section-title; }
+
+  &__info { 
+    width: 100%;
+    @extend %section-info;
+  }
+
+  &__form {
+
+    &__name { @include flexBox (auto, space-between, auto, false); }
+
+    &__group {
+      margin-bottom: 15px;
+
+      &__first-name, &__last-name, &__subject, &__email, & textarea { @extend %form-elements }
+
+      &--name { flex-basis: calc(50% - 14px); }
+
+      &__error { display: none; }
+    }
+
+    &__control__submit { @include cta (1.31rem, 6.37rem, 1.31rem, 6.37rem); }
+  }
+}

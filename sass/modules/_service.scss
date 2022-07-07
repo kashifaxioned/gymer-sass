@@ -1,5 +1,5 @@
 .service {
-  padding: 88px 0;
+  padding: 5.5rem 0;
 
   &__title { @extend %section-title; }
 
@@ -9,7 +9,7 @@
     @include flexBox (auto, space-between, auto, false);
 
     &__item {
-      padding: 70px 65px;
+      padding: 4.37rem 4.06rem;
       flex-basis: calc(33.33% - 14px);
       background-color: $secondary-color;
       color: $tertiary-color;
@@ -33,6 +33,6 @@
       &--gym::before { @include card-icon ("\f44b"); }
     }
   }
-  
+
   &__radio { @include radio-cta }
 }
