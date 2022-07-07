@@ -108,14 +108,15 @@ li {
 .get-in-touch__img img, .trainers__list__item__img img {
   box-shadow: 10px 10px #53d494; }
 
-.get-in-touch__text__title, .classes__title, .schedule__title, .trainers__title {
+.get-in-touch__text__title, .classes__title, .schedule__title, .trainers__title, .service__title {
+  width: 47%;
   color: #53d494;
   line-height: 1.2;
   text-transform: capitalize;
   font-size: 2.93rem;
   font-weight: 700; }
 
-.classes__info, .schedule__info, .trainers__info {
+.classes__info, .schedule__info, .trainers__info, .service__info {
   width: 47.33%;
   padding: 1.37rem 0 4.06rem;
   line-height: 1.8;
@@ -380,3 +381,61 @@ li {
         font-weight: 400; }
       .trainers__list__item:nth-of-type(2n) {
         margin-top: 50px; }
+
+.service {
+  padding: 88px 0; }
+  .service__card-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; }
+    .service__card-list__item {
+      padding: 70px 65px;
+      flex-basis: calc(33.33% - 14px);
+      background-color: #53d494;
+      color: #fff; }
+      .service__card-list__item__title {
+        padding: 2rem 0;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        font-weight: 400; }
+      .service__card-list__item__info {
+        color: #c1f1db;
+        line-height: 2;
+        font-size: initial;
+        font-weight: 100; }
+      .service__card-list__item--crossfit::before {
+        content: "";
+        color: inherit;
+        font-family: "FontAwesome";
+        font-size: 3.18rem;
+        font-weight: 500; }
+      .service__card-list__item--aerobics::before {
+        content: "";
+        color: inherit;
+        font-family: "FontAwesome";
+        font-size: 3.18rem;
+        font-weight: 500; }
+      .service__card-list__item--gym::before {
+        content: "";
+        color: inherit;
+        font-family: "FontAwesome";
+        font-size: 3.18rem;
+        font-weight: 500; }
+  .service__radio {
+    margin-top: 2.81rem;
+    gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; }
+    .service__radio__cta {
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 0; }
+      .service__radio__cta.active {
+        background-color: #53d494; }

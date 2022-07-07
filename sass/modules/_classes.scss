@@ -7,20 +7,6 @@
 
   &__slider { @include flexBox (auto, auto, auto, false) }
 
-  &__radio {
-    margin-top: 2.81rem;
-    gap: 10px;
-    @include flexBox (auto, center, auto, false);
-
-    &__cta {
-      padding: 5px;
-      border-radius: 50%;
-      background-color: $tertiary-color;
-      cursor: pointer;
-      font-size: 0;
-
-      &.active { background-color: $secondary-color; }
-    }
-  }
+  &__radio { @include radio-cta }
 
 }

@@ -28,6 +28,7 @@ li {
 %img-shadow { box-shadow: 10px 10px $secondary-color; }
 
 %section-title { 
+  width: 47%;
   color: $secondary-color;
   line-height: 1.2;
   text-transform: capitalize;
@@ -52,3 +53,5 @@ li {
   font-size: 1rem; 
   text-transform: capitalize;
 }
+
+

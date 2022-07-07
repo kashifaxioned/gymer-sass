@@ -1,0 +1,38 @@
+.service {
+  padding: 88px 0;
+
+  &__title { @extend %section-title; }
+
+  &__info { @extend %section-info; }
+
+  &__card-list {
+    @include flexBox (auto, space-between, auto, false);
+
+    &__item {
+      padding: 70px 65px;
+      flex-basis: calc(33.33% - 14px);
+      background-color: $secondary-color;
+      color: $tertiary-color;
+
+      &__title {
+        padding: 2rem 0;
+        text-transform: capitalize;
+        @include font (1.5rem, 400);
+      }
+
+      &__info {
+        color: $light-green;
+        line-height: 2;
+        @include font (initial, 100);
+      }
+
+      &--crossfit::before { @include card-icon ("\f787"); }
+
+      &--aerobics::before { @include card-icon ("\f21e"); }
+
+      &--gym::before { @include card-icon ("\f44b"); }
+    }
+  }
+  
+  &__radio { @include radio-cta }
+}
