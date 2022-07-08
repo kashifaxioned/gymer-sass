@@ -104,6 +104,12 @@ li {
 .wrapper {
   margin: 0 auto;
   width: 58%; }
+  @media screen and (max-width: 1440px) {
+    .wrapper {
+      width: 70%; } }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 85%; } }
 
 .get-in-touch__img img, .trainers__list__item__img img {
   box-shadow: 10px 10px #53d494; }
@@ -115,6 +121,10 @@ li {
   text-transform: capitalize;
   font-size: 2.93rem;
   font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    .get-in-touch__text__title, .classes__title, .schedule__title, .trainers__title, .service__title, .contact__title {
+      font-size: 2rem;
+      font-weight: 700; } }
 
 .classes__info, .schedule__info, .trainers__info, .service__info, .contact__info {
   width: 47.33%;
@@ -122,6 +132,11 @@ li {
   line-height: 1.8;
   font-size: 17px;
   font-weight: 400; }
+  @media screen and (max-width: 768px) {
+    .classes__info, .schedule__info, .trainers__info, .service__info, .contact__info {
+      font-size: 14px;
+      font-weight: 700;
+      width: 70%; } }
 
 .schedule__time-table__item__exercise, .schedule__time-table__item__timing, .schedule__time-table__item__trainer, .schedule__time-table__item__join-cta {
   padding: 20px 0 20px 10px;
@@ -129,6 +144,9 @@ li {
   border-bottom: 1px solid #c6cace;
   font-size: 1rem;
   text-transform: capitalize; }
+  @media screen and (max-width: 768px) {
+    .schedule__time-table__item__exercise, .schedule__time-table__item__timing, .schedule__time-table__item__trainer, .schedule__time-table__item__join-cta {
+      border: none; } }
 
 .contact__form__group__first-name, .contact__form__group__last-name, .contact__form__group__subject, .contact__form__group__email, .contact__form__group textarea, .footer__list__item__form__group input {
   width: 100%;
@@ -153,15 +171,28 @@ li {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center; }
+  .header__logo {
+    flex-basis: 6.06%; }
   .header__nav {
     margin: 0 31% 0 29.7%;
     flex-basis: 29.09%; }
+    @media screen and (max-width: 1440px) {
+      .header__nav {
+        margin: 0 20%;
+        flex-basis: 50%; } }
+    @media screen and (max-width: 1024px) {
+      .header__nav {
+        margin: 0 0 0 15%;
+        flex-basis: 60%; } }
     .header__nav__list {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
+      @media screen and (max-width: 768px) {
+        .header__nav__list {
+          display: none; } }
       .header__nav__list__item__name {
         color: #fff;
         cursor: pointer;
@@ -176,14 +207,32 @@ li {
         padding-bottom: 3px; }
     .header__nav__close, .header__nav__open {
       display: none; }
+    @media screen and (max-width: 768px) {
+      .header__nav__open {
+        margin-left: auto;
+        display: block;
+        text-indent: -99999px; }
+        .header__nav__open::before {
+          margin-right: 5px;
+          float: right;
+          text-indent: 0;
+          content: "";
+          color: #53d494;
+          font-family: "FontAwesome";
+          font-size: 1.6rem;
+          font-weight: 400; } }
   .header__contact__cta {
     padding: 9px 20px;
     border-radius: 5px;
     border: 1px solid #53d494;
+    margin-left: auto;
     color: #53d494;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500; }
+    @media screen and (max-width: 768px) {
+      .header__contact__cta {
+        display: none; } }
     @media screen and (min-width: 768px) {
       .header__contact__cta:hover {
         background-color: #53d494;
@@ -205,12 +254,24 @@ li {
     text-transform: capitalize;
     font-size: 7.81rem;
     font-weight: 800; }
+    @media screen and (max-width: 1024px) {
+      .banner__title {
+        width: 90%;
+        font-size: 5.5rem;
+        font-weight: 800; } }
+    @media screen and (max-width: 768px) {
+      .banner__title {
+        font-size: 4rem;
+        font-weight: 800; } }
 
 .counter {
   padding: 5.12rem 0 7.81rem; }
+  @media screen and (max-width: 768px) {
+    .counter {
+      padding: 3rem 0 4rem; } }
   .counter__list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
@@ -259,20 +320,32 @@ li {
 
 .get-in-touch {
   padding-bottom: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .get-in-touch {
+      padding: 3rem 0; } }
   .get-in-touch .wrapper {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch; }
+    @media screen and (max-width: 768px) {
+      .get-in-touch .wrapper {
+        flex-direction: column-reverse; } }
   .get-in-touch__text {
     padding-top: 2.93rem;
     flex-basis: 40%; }
+    .get-in-touch__text__title {
+      width: 100%; }
     .get-in-touch__text__info {
       padding: 1.62rem 0 2.43rem;
       line-height: 1.8;
       font-size: 17px;
       font-weight: 500; }
+      @media screen and (max-width: 768px) {
+        .get-in-touch__text__info {
+          font-size: 14px;
+          font-weight: 700; } }
     .get-in-touch__text__cta {
       padding: 1rem 1.6rem 1rem 1.6rem;
       border: 1px solid #53d494;
@@ -291,12 +364,17 @@ li {
 
 .classes {
   padding: 5.06rem 0 2.5rem; }
+  @media screen and (max-width: 768px) {
+    .classes {
+      padding: 3rem 0 1.3rem; } }
   .classes__slider {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch; }
+    .classes__slider__item {
+      flex-basis: 25%; }
   .classes__radio {
     margin-top: 2.81rem;
     gap: 10px;
@@ -316,6 +394,9 @@ li {
 
 .schedule {
   padding: 9.12rem 0; }
+  @media screen and (max-width: 768px) {
+    .schedule {
+      padding: 4.5rem 0; } }
   .schedule__day-list {
     display: flex;
     flex-wrap: nowrap;
@@ -323,6 +404,9 @@ li {
     justify-content: center;
     align-items: stretch;
     gap: 3px; }
+    @media screen and (max-width: 768px) {
+      .schedule__day-list {
+        flex-wrap: wrap; } }
     .schedule__day-list__item__name {
       padding: 13px 18px;
       border-radius: 5px;
@@ -348,12 +432,20 @@ li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch; }
+    @media screen and (max-width: 768px) {
+      .schedule__time-table {
+        border: none;
+        gap: 1rem; } }
     .schedule__time-table__item {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: flex-start;
       align-items: stretch; }
+      @media screen and (max-width: 768px) {
+        .schedule__time-table__item {
+          border: 1px solid #c6cace;
+          flex-direction: column; } }
       .schedule__time-table__item__exercise {
         flex-basis: 24.2%; }
       .schedule__time-table__item__timing {
@@ -363,6 +455,9 @@ li {
       .schedule__time-table__item__join-cta {
         flex-basis: 18.5%;
         text-align: center; }
+        @media screen and (max-width: 768px) {
+          .schedule__time-table__item__join-cta {
+            text-align: left; } }
 
 .trainers {
   padding: 2.68rem 0 6.25rem; }
@@ -372,6 +467,10 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch; }
+    @media screen and (max-width: 768px) {
+      .trainers__list {
+        flex-direction: column;
+        gap: 1rem; } }
     .trainers__list__item {
       flex-basis: calc(33.33% - 2.81rem); }
       .trainers__list__item__name {
@@ -391,15 +490,25 @@ li {
         font-weight: 400; }
       .trainers__list__item:nth-of-type(2n) {
         margin-top: 3.12rem; }
+      @media screen and (max-width: 768px) {
+        .trainers__list__item:nth-of-type(2n) {
+          margin-top: 0; } }
 
 .service {
   padding: 5.5rem 0; }
+  @media screen and (max-width: 768px) {
+    .service {
+      padding: 3rem 0; } }
   .service__card-list {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch; }
+    @media screen and (max-width: 1024px) {
+      .service__card-list {
+        flex-direction: column;
+        gap: 1rem; } }
     .service__card-list__item {
       padding: 4.37rem 4.06rem;
       flex-basis: calc(33.33% - 14px);
@@ -453,8 +562,20 @@ li {
 .contact {
   padding: 5.5rem 0 6.43rem;
   background-color: #121212; }
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding: 3rem 0; } }
   .contact .wrapper {
     width: 32.8%; }
+    @media screen and (max-width: 1024px) {
+      .contact .wrapper {
+        width: 60%; } }
+    @media screen and (max-width: 768px) {
+      .contact .wrapper {
+        width: 75%; } }
+    @media screen and (max-width: 425px) {
+      .contact .wrapper {
+        width: 85%; } }
   .contact__info {
     width: 100%; }
   .contact__form__name {
@@ -485,12 +606,19 @@ li {
 
 .footer {
   padding: 7.37rem 0 8.68rem; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 3rem 0 4rem; } }
   .footer__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch; }
+    @media screen and (max-width: 768px) {
+      .footer__list {
+        flex-direction: column;
+        gap: 1rem; } }
     .footer__list__item {
       flex-basis: 33.3%; }
       .footer__list__item--links {

@@ -7,6 +7,12 @@
 
   &__list {
     @include  flexBox (auto, space-between, auto, false);
+    
+    @include breakpoint (ipad) { 
+      flex-direction: column; 
+      gap: 1rem;
+    }
+
 
     &__item {
       flex-basis: calc(33.33% - 2.81rem);
@@ -33,6 +39,8 @@
         @include font (1rem, 400)
       }
       &:nth-of-type(2n) { margin-top: 3.12rem; }
+
+      @include breakpoint (ipad) { &:nth-of-type(2n) { margin-top: 0; } }
     }
   
   }

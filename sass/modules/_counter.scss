@@ -1,8 +1,9 @@
 .counter {
   padding: 5.12rem 0 7.81rem;
+  @include breakpoint (ipad) { padding: 3rem 0 4rem; }
 
   &__list {
-    @include flexBox (auto, space-between, center, false);
+    @include flexBox (auto, space-between, center, true);
 
     &__item {
 

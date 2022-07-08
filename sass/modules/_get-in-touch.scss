@@ -1,21 +1,29 @@
 .get-in-touch {
   padding-bottom: 6.25rem;
+  @include breakpoint (ipad) { padding: 3rem 0; }
 
   & .wrapper {
     @include flexBox (auto, space-between, auto, false);
+
+    @include breakpoint (ipad) { flex-direction: column-reverse; }
+
   }
 
   &__text {
     padding-top: 2.93rem;
     flex-basis: 40%;
 
-    &__title { @extend %section-title; }
+    &__title { 
+      @extend %section-title;
+      width: 100%;
+    }
 
     &__info {
       padding: 1.62rem 0 2.43rem;
       line-height: 1.8;
 
       @include font (17px, 500);
+      @include breakpoint (ipad) { @include font (14px, 700); }
     }
 
     &__cta { @include cta (1rem, 1.6rem, 1rem, 1.6rem); }

@@ -2,7 +2,18 @@
   padding: 5.5rem 0 6.43rem;
   background-color: $powder-black;
 
-  & .wrapper { width: 32.8%; }
+  @include breakpoint (ipad) { padding: 3rem 0; }
+
+  & .wrapper { 
+    width: 32.8%; 
+    
+    @include breakpoint (ipad-pro) { width: 60%; }
+
+    @include breakpoint (ipad) { width: 75%; }
+
+    @include breakpoint (large-mobile) { width: 85%; }
+
+  }
 
   &__title { @extend %section-title; }
 

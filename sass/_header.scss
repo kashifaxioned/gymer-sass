@@ -6,12 +6,26 @@
     @include flexBox (auto, auto, center, false);
   }
 
+  &__logo { flex-basis: 6.06%; }
+
   &__nav {
     margin: 0 31% 0 29.7%;
     flex-basis: 29.09%;
+
+    @include breakpoint (pc) {
+       margin: 0 20%;
+       flex-basis: 50%;
+    }
+
+    @include breakpoint (ipad-pro) {
+      margin: 0 0 0 15%;
+      flex-basis: 60%;
+   }
+    
     &__list {
 
       @include flexBox (auto, space-between, center, false);
+      @include breakpoint (ipad) { display: none; }
 
 
       &__item {
@@ -34,16 +48,35 @@
     }
 
     &__close, &__open { display: none; }
+
+    &__open {
+      @include breakpoint (ipad) { 
+        margin-left: auto;
+        display: block; 
+        text-indent: -99999px;
+
+        &::before {
+          margin-right: 5px;
+          float: right;
+          text-indent: 0;
+          @include icon ("\f0c9", 1.6rem, 400, $secondary-color)
+        }
+      }
+    }
   }
 
   &__contact__cta {
     padding: 9px 20px;
     border-radius: 5px;
     border: 1px solid $secondary-color;
+    margin-left: auto;
     color: $secondary-color;
     text-transform: uppercase;
 
     @include font (14px, 500);
+
+    @include breakpoint (ipad) { display: none; }
+
 
     @include breakpoint (min-ipad) {
       &:hover {

@@ -1,5 +1,6 @@
 .schedule {
   padding: 9.12rem 0;
+  @include breakpoint (ipad) { padding: 4.5rem 0; }
 
   &__title { @extend %section-title; }
 
@@ -8,6 +9,9 @@
   &__day-list {
     @include flexBox (auto, center, auto, false);
     gap: 3px;
+
+    @include breakpoint (ipad) { flex-wrap: wrap; }
+    
 
     &__item__name {
       padding: 13px 18px;
@@ -40,8 +44,18 @@
   
     @include flexBox (column, auto, auto, false);
 
+    @include breakpoint (ipad) {
+      border: none; 
+      gap: 1rem;
+    }
+
     &__item {
       @include flexBox (auto, auto, auto, false);
+      
+      @include breakpoint (ipad) { 
+        border: 1px solid $grey;
+        flex-direction: column;
+      }
 
       &__exercise {
         flex-basis: 24.2%; 
@@ -62,6 +76,9 @@
         flex-basis: 18.5%;
         text-align: center;
         @extend %time-table-item;
+
+        @include breakpoint (ipad) { text-align: left; }
+
       }
     }
   }

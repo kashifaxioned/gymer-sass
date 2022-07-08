@@ -23,6 +23,9 @@ li {
 .wrapper {
   margin: 0 auto;
   width: 58%; 
+  @include breakpoint (pc) { width: 70%; }
+  @include breakpoint (ipad) { width: 85%; }
+  
 }
 
 %img-shadow { box-shadow: 10px 10px $secondary-color; }
@@ -35,7 +38,7 @@ li {
 
   @include font (2.93rem, 700);
 
-  // @include breakpoint (ipad) { @include font (2.5rem, 900); }
+  @include breakpoint (ipad) { @include font (2rem, 700); }
 
 }
 
@@ -44,6 +47,12 @@ li {
   padding: 1.37rem 0 4.06rem;
   line-height: 1.8;
   @include font (17px, 400);
+
+  @include breakpoint (ipad) { 
+    @include font (14px, 700); 
+    width: 70%;
+  }
+
 }
 
 %time-table-item {
@@ -52,6 +61,8 @@ li {
   border-bottom: 1px solid $grey;
   font-size: 1rem; 
   text-transform: capitalize;
+ 
+  @include breakpoint (ipad) { border: none;  }
 }
 
 %form-elements {

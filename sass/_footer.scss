@@ -1,8 +1,15 @@
 .footer {
   padding: 7.37rem 0 8.68rem;
+  @include breakpoint (ipad) { padding: 3rem 0 4rem; }
 
   &__list {
     @include flexBox (auto, space-between, auto, true);
+
+    @include breakpoint (ipad) { 
+      flex-direction: column; 
+      gap: 1rem;
+    }
+
 
     &__item {
 

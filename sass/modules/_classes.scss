@@ -1,11 +1,17 @@
 .classes {
   padding: 5.06rem 0 2.5rem;
 
+  @include breakpoint (ipad) { padding: 3rem 0 1.3rem }
+
   &__title { @extend %section-title; }
 
   &__info { @extend %section-info; }
 
-  &__slider { @include flexBox (auto, auto, auto, false) }
+  &__slider { 
+    @include flexBox (auto, auto, auto, false); 
+    
+    &__item { flex-basis: 25%; }
+  }
 
   &__radio { @include radio-cta }
 
